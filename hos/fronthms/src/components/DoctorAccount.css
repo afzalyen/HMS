@@ -1,0 +1,128 @@
+.doctor-account-background {
+    background-color: #071832;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.dashboard-container {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.welcome-box {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.profile-link {
+    display: inline-block;
+    color: #125A66;
+    border: 1px solid #125A66;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-link:hover {
+    background-color: #125A66;
+    color: #fff;
+}
+
+.dashboard-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard-box {
+    background-color: #fff;
+    color: #125A66;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.dashboard-box h2 {
+    color: #125A66;
+    margin-bottom: 10px;
+}
+
+.dashboard-box p {
+    color: #333;
+}
+
+.box-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #125A66;
+    border: 1px solid #125A66;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.box-link:hover {
+    background-color: #125A66;
+    color: #fff;
+}
+
+.dashboard-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .dashboard-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-box {
+        width: 80%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+}
+.welcome-profile-box {
+    background-color: #ffffff; /* White background */
+    color: #4A90E2; /* Navy blue font color */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.welcome-profile-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the dashboard boxes with animations */
+
+
+.dashboard-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}

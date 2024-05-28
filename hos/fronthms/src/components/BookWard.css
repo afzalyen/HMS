@@ -1,0 +1,83 @@
+
+.book-ward-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #071832;
+ /* Enable scrolling if content overflows */
+}
+
+.content-wrapper {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 600px;
+}
+
+.book-ward-title {
+  text-align: center;
+  color: #071832;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.error-message,
+.success-message {
+  color: #ff4d4d;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.book-ward-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #071832;
+  font-size: 0.9em;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #071832;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0e2d53;
+}
+
+@media (max-width: 600px) {
+  .content-wrapper {
+    width: 100%;
+  }
+}

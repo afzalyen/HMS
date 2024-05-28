@@ -1,0 +1,93 @@
+/* BloodBank.css */
+
+.blood-bank-container {
+  background: linear-gradient(to right, #ff6666, #8b0000);
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 0px;
+  /* Enable scrolling if content overflows */
+}
+
+.blood-bank-content {
+  padding-top: 0px; /* Adjusted padding-top */
+  min-height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+
+.blood-bank-image {
+  max-width: 30%; /* Adjusted max-width */
+  height: auto;
+  margin-top: 10px; /* Adjusted margin-top */
+}
+
+.blood-bank-title,
+.blood-bank-subtitle,
+.additional-info,
+.card-title,
+.card-text {
+  color: #fff;
+  text-align: center;
+}
+
+.blood-bank-title {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.blood-bank-subtitle {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.additional-info {
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gradient-card {
+  background: linear-gradient(to right, #ff9999, #ff6666);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 300px; /* Adjusted height */
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gradient-card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image {
+  max-width: 60%; /* Adjusted max-width */
+  max-height: 120px; /* Added max-height */
+  margin-bottom: 8px;
+}
+/* BloodBank.css */
+
+/* ... (previous styles) ... */
+
+.card-title {
+  font-size: 1.3rem;
+  color: white; /* Set card title text color to white */
+}
+
+.card-text {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: white; /* Set card text color to white */
+}

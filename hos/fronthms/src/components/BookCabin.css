@@ -1,0 +1,97 @@
+/* Styles for the main container */
+.book-cabin-container {
+  display: flex;
+  flex-direction: column; /* Ensure content is stacked vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh; /* Use min-height to ensure it takes up at least the full viewport height */
+  background-color: #071832;
+  /* position: relative; Add relative positioning to the container */
+ /* Enable scrolling if content overflows */
+}
+
+/* Add fixed positioning to the navbar */
+
+/* Styles for the content wrapper */
+.content-wrapper {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 600px;
+}
+
+/* Styles for the title */
+.book-cabin-title {
+  text-align: center;
+  color: #071832;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Styles for error and success messages */
+.error-message,
+.success-message {
+  color: #ff4d4d;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Styles for the form */
+.book-cabin-form {
+  width: 100%;
+}
+
+/* Styles for form rows */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for form groups */
+.form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+/* Styles for labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #071832;
+  font-size: 0.9em;
+}
+
+/* Styles for selects and inputs */
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+/* Styles for buttons */
+button {
+  background-color: #071832;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0e2d53;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .content-wrapper {
+    width: 100%;
+  }
+}

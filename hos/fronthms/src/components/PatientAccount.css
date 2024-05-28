@@ -1,0 +1,243 @@
+/* 
+.patient-account-background {
+  background-color: #071832; 
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  color: #6A7E8E;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #6A7E8E;
+}
+
+.nav-items a {
+  margin: 0 15px;
+  color: #6A7E8E;
+  text-decoration: none;
+}
+
+.nav-items a:hover {
+  text-decoration: underline;
+}
+
+.current-time {
+  font-size: 14px;
+  color: #6A7E8E;
+  margin-right: 20px;
+}
+
+.dashboard-box {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 15px;
+  min-height: 220px;
+  max-width: calc(33.33% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboard-box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #6A7E8E;
+  font-size: 22px;
+}
+
+.dashboard-box p {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.box-link {
+  text-decoration: none;
+  color: #6A7E8E;
+  padding: 12px 24px;
+  border: 1px solid #6A7E8E;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .dashboard-box {
+      max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-box {
+      max-width: 100%;
+      padding: 20px;
+  }
+
+  .dashboard-box h2 {
+      font-size: 20px;
+  }
+}
+
+.logout-link {
+  color: #4CAF50;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.logout-link:hover {
+  background-color: #4CAF50;
+  color: white;
+} */
+/* PatientAccount.css */
+
+/* Background Styles */
+.patient-account-background {
+  background-color: #071832;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Fixed Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  color: #6A7E8E;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Position at the top of the viewport */
+  left: 0;
+  right: 0;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #6A7E8E;
+}
+
+.nav-items a {
+  margin: 0 15px;
+  color: #6A7E8E;
+  text-decoration: none;
+}
+
+.nav-items a:hover {
+  text-decoration: underline;
+}
+
+.current-time {
+  font-size: 14px;
+  color: #6A7E8E;
+  margin-right: 20px;
+}
+
+/* Dashboard Box Styles */
+.dashboard-box {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 15px;
+  min-height: 320px; /* Increased height of the boxes */
+  max-width: calc(33.33% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboard-box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #6A7E8E;
+  font-size: 22px;
+}
+
+.dashboard-box p {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.box-link {
+  text-decoration: none;
+  color: #6A7E8E;
+  padding: 12px 24px;
+  border: 1px solid #6A7E8E;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-weight: 600;
+  position: relative; /* Position relative for pseudo elements */
+}
+
+.box-link:before {
+  content: ""; /* Create a pseudo element */
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Align to the top of the box */
+  left: 0; /* Align to the left of the box */
+  width: 100%; /* Take full width of the box */
+  height: 100%; /* Take full height of the box */
+  background-color: transparent; /* Transparent background */
+  z-index: -1; /* Place it below the link text */
+  border-radius: 15px; /* Match the box's border radius */
+}
+
+.box-link:hover {
+  color: white;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 900px) {
+  .dashboard-box {
+      max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-box {
+      max-width: 100%;
+      padding: 20px;
+  }
+
+  .dashboard-box h2 {
+      font-size: 20px;
+  }
+}

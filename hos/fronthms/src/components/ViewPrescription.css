@@ -1,0 +1,91 @@
+.view-prescription-page {
+  background-image: linear-gradient(to right, #2c3e50, #3498db);
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  padding-top: 00px; /* Adjust for Navbar */
+}
+
+.view-prescription-page .view-prescription-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  color: #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.view-prescription-page .view-prescription-container h2 {
+  color: #3498db;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.view-prescription-page .search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.view-prescription-page .search-box input[type="text"] {
+  padding: 12px;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  margin-right: 10px;
+  flex-grow: 1;
+  color: #333;
+}
+
+.view-prescription-page .search-box .search-button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-prescription-page .search-box .search-button:hover {
+  background-color: #2980b9;
+}
+
+.view-prescription-page .prescription-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-prescription-page .prescription-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.view-prescription-page .prescription-card h3 {
+  color: #3498db;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.view-prescription-page .prescription-card p {
+  margin-bottom: 10px;
+}
+
+.view-prescription-page .prescription-card .download-button {
+  background-color: #2ecc71;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-prescription-page .prescription-card .download-button:hover {
+  background-color: #27ae60;
+}

@@ -1,0 +1,113 @@
+.home-page {
+  height: 100vh;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page .main-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-page .login-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page .login-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.home-page .login-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home-page .login-box.doctor-login {
+  background: white;
+}
+
+.home-page .login-box.patient-login {
+  background: white; 
+}
+
+.home-page .login-box img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.home-page .login-info {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-page .login-info h2,
+.home-page .login-info p {
+  margin: 10px 0;
+}
+
+.home-page .btn.btn-primary {
+  background-color: #125A66;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  width: 70%;
+  align-self: center;
+  margin-top: auto;
+}
+
+.home-page .btn.btn-primary:hover {
+  background-color: #0f4a5a;
+}
+/* HomePage.css */
+
+/* Add any existing styles you have */
+
+/* HomePage.css */
+
+/* ... Your existing styles ... */
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(41, 186, 41); /* Blue background color */
+  color: #fff; /* White text color */
+  font-size: 24px; /* Adjust the font size as needed */
+  padding: 12px; /* Adjust padding as needed */
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.chat-icon:hover {
+  background-color: #06b300; /* Darker blue on hover */
+}

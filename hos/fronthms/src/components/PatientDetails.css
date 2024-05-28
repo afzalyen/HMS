@@ -1,0 +1,77 @@
+/* PatientDetails.css */
+.patient-details-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #071832;
+    color: white;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.patient-details-page .navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.patient-details-page .patient-details-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.patient-details-page .patient-details-title {
+    color: #FFF;
+    margin: 20px 0;
+}
+
+.patient-details-page .dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.patient-details-page .dashboard-card {
+    background-color: #293241;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.patient-details-page .dashboard-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.patient-details-page .dashboard-card .card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.patient-details-page .dashboard-card h2 {
+    margin-top: 0;
+}
+
+.patient-details-page .dashboard-card p {
+    color: #B8C1EC;
+}
+
+@media (max-width: 900px) {
+    .patient-details-page .dashboard-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .patient-details-page .dashboard-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}

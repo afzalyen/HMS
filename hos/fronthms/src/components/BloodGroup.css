@@ -1,0 +1,64 @@
+/* BloodGroup.css */
+
+.blood-group-container {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #ff6666, #8b0000);
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+.section-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-buttons button {
+  background-color: #ff6666;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.section-buttons button.active {
+  background-color: #cc0000;
+}
+
+.table-container {
+  width: 80%;
+  margin: auto;
+}
+
+.blood-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.blood-details-table th,
+.blood-details-table td {
+  border: 1px solid #ff6666; /* Keep the border color the same as the background */
+  padding: 15px;
+  color: black;
+}
+
+.blood-details-table th {
+  background-color: #ff6666;
+  color: white;
+}
+
+.blood-details-table tbody tr:nth-child(even) {
+  background-color: #ffc2c2;
+}

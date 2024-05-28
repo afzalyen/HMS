@@ -1,0 +1,87 @@
+/* BloodDonors.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: black; /* Set text color to black */
+  /* Enable scrolling if content overflows */
+}
+
+.blood-donor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff6666, #8b0000);
+  overflow: hidden;
+}
+
+.content-wrapper {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.blood-donor-title {
+  text-align: center;
+  color: #ff6666;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: black; /* Set text color to black */
+  font-size: 0.9em; /* Adjust the font size as needed */
+}
+
+.form-control {
+  width: calc(100% - 24px); /* Adjusted width for all input boxes */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #ff6666;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #8b0000;
+}
+
+.alert {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}

@@ -1,0 +1,156 @@
+/* Updated Test.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Fixed white background */
+}
+
+.test-body {
+  padding: 00px;
+}
+
+.test-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-box {
+  width: 45%;
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.test-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.test-service-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.test-service-table th, .test-service-table td {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  text-align: left;
+  color: #495057;
+}
+
+.test-service-table th {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.test-service-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.test-service-table .selected-blue {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 10px;
+}
+
+.pagination span {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.pagination span.active {
+  color: #ffffff;
+  background-color: #3498db;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.test-add-to-patient label {
+  display: block;
+  margin-top: 10px;
+  color: #495057;
+}
+
+.test-add-to-patient input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.selected-tests-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.selected-test {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.test-add-to-patient button {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.test-add-to-patient button:hover {
+  background-color: #218838;
+}
+
+.table-title, .form-title {
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+.error-message, .success-message {
+  background-color: #dc3545;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.success-message {
+  background-color: #28a745;
+}
+
+.total-bill {
+  color: #212529;
+  font-weight: bold;
+  margin-top: 10px;
+}

@@ -1,0 +1,66 @@
+/* BloodAvailability.css */
+
+.blood-availability-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff6666, #8b0000);
+  color: #fff;
+  /* Enable scrolling if content overflows */
+}
+
+.blood-availability-content {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover td {
+  background-color: initial; /* Remove background color on hover */
+}
+
+.blood-group-column {
+  border-right: 1px solid #ddd;
+}
+
+.bag-box {
+  display: inline-block;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  color: #333;
+}
+
+.bag-box:hover {
+  background-color: #ff6666;
+}

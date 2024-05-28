@@ -1,0 +1,35 @@
+
+  
+.navbar {
+    position: fixed; /* or absolute */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: #125A66;
+  }
+  
+  .nav-items a {
+    margin: 0 15px;
+    color: hsl(189, 70%, 24%);
+    text-decoration: none;
+  }
+  
+  .nav-items a:hover {
+    text-decoration: underline;
+  }
+  
+  .current-time {
+    font-size: 14px;
+    color: #125A66;
+  }
+  
